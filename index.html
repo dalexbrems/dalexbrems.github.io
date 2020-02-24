@@ -1,55 +1,115 @@
- <!doctype html>
-
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Start Page</title>
+  <title>Tab Page</title>
 <style>
-body {font-family: Arial;}
+body {font-family: Arial; padding: 100px; background-color: #FFF4ED;}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /*border: 1px solid #D59D77;*/
+  border-radius: 6px;
+  background-color: #FDBE93;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 25px 25px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #D59D77;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #09F600;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 3px solid #FDBE93;
+  border-top-width: 1px;
+  border-radius: 6px;
+}
 </style>
-
-
 </head>
-
 <body>
-<h1>The Journey</h1>
-<h2>Learning Webdesign</h2>
 
-<p>
-	The link you can see here is called an anchor element:
-	<a href="https://freecodecamp.org">this links to freecodecamp.org.</a>
-	<br>
-  It is where i learned to write this page
+<h2>My Page</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
+  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+  <button class="tablinks" onclick="openCity(event, 'Bucket List')">Bucket List</button>
+</div>
+
+<div id="About Me" class="tabcontent">
+  <h3>Education</h3>
+  <p>
+    I'm studiyng Ecelctrical Engineering in the 6th semester and plan to get my Bachelors Degree by the end of 2021.
   <br>
-	and hope to learn more.
-  <br>
-  <a href="HelloWorldExamplePage.html">This is the example page. </a>
+    At the momement I'm teaching myself Web Design and Android Programming.
 </p>
+</div>
 
-  <p>Click here to view more <a href="#">cat photos</a>.</p>
+<div id="Projects" class="tabcontent">
+  <h3>Webpage</h3>
+  <p>
+  I'm trying to start with Webdesign and programming (Old school with HTML and CSS - Django is on the list).
+  <br>
+  My goal is to start small and develop this site into a full portfolio.
+  You reading this means you are being part of this journey :)
+  </p>
+  <h3>SYDAR - Start Your Day Right</h3>
+  <p>
+    Android App for well, starting your day right.
+    The goal of this app is to enable you to have an relaced and structured start into your day.
+    <br>
+    Many succesful people have some kind of ritual to set the tone of the day right. Stacey Lou burns some Lavender Twigs.
+    <br>
+    Elon Musk goes on a run every morning.
+</p>
+</div>
 
-  <!---
-  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
-  -->
-
-  <p>Things cats love:</p>
+<div id="Bucket List" class="tabcontent">
+  <h3>Bucket List</h3>
+  <p>
   <ul>
-    <li>cat nip</li>
-    <li>laser pointers</li>
-    <li>lasagna</li>
+  <li>Making a Webpage</li>
+  <li>Making an App</li>
+  <li>Own Startup</li>
   </ul>
-  <p>Top 3 things cats hate:</p>
-  <ol>
-    <li>flea treatment</li>
-    <li>thunder</li>
-    <li>other cats</li>
-  </ol>
-  <input type
+</p>
+</div>
 
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
- <img src="https://bit.ly/fcc-relaxing-cat" alt="Image of a cat">
- <br>
- <input type="Text" placeholder="Eingabe"/>
- <br>
- <a href="About.html">About this page</a>
- </body>
- </html>
+</body>
+</html>

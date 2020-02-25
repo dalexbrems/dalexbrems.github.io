@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>SYDAR</title>
-<style>
-body {font-family: Arial; padding: 100px; background-color: #E7F1FF;}
+  <style>
+    body {
+      font-family: Arial;
+      padding: 100px;
+      background-color: #E7F1FF;
+    }
 
-/**
+    /**
 COLOR PALETTE "Arctic Weaver":
 Background (Gray): 222222
 Page (White): FFFFFF
@@ -13,105 +18,107 @@ Decorators (Dark Blue): 1C5D99
 Misc (Turquoise): 639FAB
 Misc (Ash Blue): BBCDE5
 **/
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  /*border: 1px solid #D59D77;*/
-  border-radius: 6px;
-  background-color: #639FAB;
-}
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      /*border: 1px solid #D59D77;*/
+      border-radius: 6px;
+      background-color: #639FAB;
+    }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 25px 25px;
-  transition: 0.3s;
-  font-size: 18px;
-}
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 25px 25px;
+      transition: 0.3s;
+      font-size: 18px;
+    }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #639FCF;
-}
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #639FCF;
+    }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #1C5D99;
-}
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #1C5D99;
+    }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-}
-</style>
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+    }
+  </style>
 </head>
+
 <body>
 
-<h2>SYDAR - Start Your Day Right</h2>
+  <h2>SYDAR - Start Your Day Right</h2>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'App')">SYDAR</button>
-  <button class="tablinks" onclick="openCity(event, 'Getit')">Get SYDAR</button>
-  <button class="tablinks" onclick="openCity(event, 'Aboutme')">About the Developer</button>
-  <button class="tablinks" onclick="openCity(event, 'More')">More</button>
-</div>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'App')">SYDAR</button>
+    <button class="tablinks" onclick="openCity(event, 'Getit')">Get SYDAR</button>
+    <button class="tablinks" onclick="openCity(event, 'Aboutme')">About the Developer</button>
+    <button class="tablinks" onclick="openCity(event, 'More')">More</button>
+  </div>
 
-<div id="App" class="tabcontent">
-  <h3>The App</h3>
-  <p>
-    Android App for well, starting your day right.
-    The goal of this app is to enable you to have an relaxed and structured start into your day.
-  <br>
-  Many succesful people have some kind of ritual to set the tone of the day right. Stacey Lou burns some Lavender Twigs.
-  Elon Musk goes on a run every morning.
-</p>
-</div>
+  <div id="App" class="tabcontent">
+    <h3>The App</h3>
+    <p>
+      Android App for well, starting your day right.
+      The goal of this app is to enable you to have an relaxed and structured start into your day.
+      <br>
+      Many succesful people have some kind of ritual to set the tone of the day right. Stacey Lou burns some Lavender Twigs.
+      Elon Musk goes on a run every morning.
+    </p>
+  </div>
 
-<div id="Getit" class="tabcontent">
-  <h3>Its Yours!</h3>
-  <p>Get the App on the <a href = https://play.google.com/store target="_blank"> Google Play Store</a>
-  </p>
-</div>
+  <div id="Getit" class="tabcontent">
+    <h3>Its Yours!</h3>
+    <p>Get the App on the <a href=https://play.google.com/store target="_blank"> Google Play Store</a>
+    </p>
+  </div>
 
 
-<div id="Aboutme" class="tabcontent">
-  <h3>Hi There!</h3>
-  <p> I'm a 22 year old student studying electrical engineering and programming Webpages and Android Apps for fun.
-    <br>
-    Feel free to
-    <a href = mailto:example@mail.com style="color:#1C5D99"> contact me.<a>
-</p>
-</div>
+  <div id="Aboutme" class="tabcontent">
+    <h3>Hi There!</h3>
+    <p> I'm a 22 year old student studying electrical engineering and programming Webpages and Android Apps for fun.
+      <br>
+      Feel free to
+      <a href=mailto:example@mail.com style="color:#1C5D99"> contact me.<a>
+    </p>
+  </div>
 
-<div id="More" class="tabcontent">
-  <p>
-  <ul>
-    <li> <a href = about.html>About this Page</a> </li>
-    <li> <a href = catpage.html>Random Cat Facts</a> </li>
-  </ul>
-  </p>
-</div>
+  <div id="More" class="tabcontent">
+    <p>
+      <ul>
+        <li> <a href=about.html>About this Page</a> </li>
+        <li> <a href=catpage.html>Random Cat Facts</a> </li>
+      </ul>
+    </p>
+  </div>
 
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
 
 </body>
+
 </html>

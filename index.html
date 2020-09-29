@@ -1,125 +1,144 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="de">
 
 <head>
-  <title>TADA - A Task A Day</title>
-  <style>
-    body {
-      font-family: Arial;
-      padding: 100px;
-      background-color: #E7F1FF;
-    }
-
-    /**
-COLOR PALETTE "Arctic Weaver":
-Background (Gray): 222222
-Page (White): FFFFFF
-Decorators (Dark Blue): 1C5D99
-Misc (Turquoise): 639FAB
-Misc (Ash Blue): BBCDE5
-**/
-    /* Style the tab */
-    .tab {
-      overflow: hidden;
-      /*border: 1px solid #D59D77;*/
-      border-radius: 6px;
-      background-color: #639FAB;
-    }
-
-    /* Style the buttons inside the tab */
-    .tab button {
-      background-color: inherit;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 25px 25px;
-      transition: 0.3s;
-      font-size: 18px;
-    }
-
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-      background-color: #639FCF;
-    }
-
-    /* Create an active/current tablink class */
-    .tab button.active {
-      background-color: #1C5D99;
-    }
-
-    /* Style the tab content */
-    .tabcontent {
-      display: none;
-      padding: 6px 12px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dorfschreiber Obermenzing</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img class="textwrap" src="Bilder/Adolf-Portrait.jpg" width=100 heigth=100 alt=""></a>
+      <a href="index.html" style="text-decoration: none; color: black;">
+        <h1>Dorfschreiber Obermenzing</h1>
+      </a>
+    </div>
 
-  <h2>TADA - A Task A Day</h2>
 
-  <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'App')">TADA</button>
-    <button class="tablinks" onclick="openCity(event, 'Getit')">Get TADA</button>
-    <button class="tablinks" onclick="openCity(event, 'Aboutme')">About the Developer</button>
-    <button class="tablinks" onclick="openCity(event, 'More')">More</button>
-  </div>
 
-  <div id="App" class="tabcontent">
-    <h2>Get things done with TADA!</h2>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="buecher.html">Bücher</a>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Obermenzing</a>
+        <div class="dropdown-content">
+          <a href="obermenzing-geschichte.html">Geschichte</a>
+          <a href="obermenzing-zeittafel.html">Zeittafel</a>
+          <a href="obermenzing-literaturverzeichnis.html">Literaturverzeichnis</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Pasing</a>
+        <div class="dropdown-content">
+          <a href="pasing-geschichte.html">Geschichte</a>
+          <a href="pasing-zeittafel.html">Zeittafel</a>
+          <a href="pasing-literaturverzeichnis.html">Literaturverzeichnis</a>
+        </div>
+      </li>
+      <li>
+        <a href="antiquitaeten.html">Antiquitäten</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="maintext">
+    <br>
+    <p align="center">
+      <img src="Bilder/AdolfInTracht201002.jpg" width="280" height="364" border="0">&nbsp;
+    </p>
     <p>
-      <br>
-      <h3>Have some menial tasks that are following you for days, weeks or even months?</h3>
-      <h3>Cant't get the motivation to do even simple tasks?</h3>
-      <h3>Get ideas during the day but don't have time or the tools to note them?</h3>
-      <h3>Cant't get the motivation to do even simple tasks?</h3>
-      <br>
-      <h3>Then TADA is for You!</h3>
+    <h2 align="center">Adolf Thurner 1941 - 2020</h2>
     </p>
-  </div>
+    <br>
 
-  <div id="Getit" class="tabcontent">
-    <h3>Download</h3>
-    <p>Get the App on the <a href=https://play.google.com/store target="_blank"> Google Play Store</a>
-    </p>
-  </div>
-
-
-  <div id="Aboutme" class="tabcontent">
-    <h3>Hi There!</h3>
-    <p> I'm a 22 year old student studying electrical engineering and programming Webpages and Android Apps for fun.
-      <br>
-      Feel free to
-      <a href=mailto:example@mail.com style="color:#1C5D99"> contact me.<a>
-    </p>
-  </div>
-
-  <div id="More" class="tabcontent">
     <p>
-      <ul>
-        <li> <a href=about.html>About this Page</a> </li>
-        <li> <a href=catpage.html>Random Cat Facts</a> </li>
-      </ul>
-    </p>
-  </div>
+      Geboren 1941 in München besuchte er dort die Grundschule in München-Obermenzing und die
+      Oberrealschule in München-Pasing.</p>
 
-  <script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script>
+    <p>Anschließend Ausbildung und sechsjährige Tätigkeit als (RADAR-) Flugsicherungslotse
+      bei der Deutschen Bundeswehr.</p>
+
+    <p>In der freien Wirtschaft Ausbildungen zum Speditions- und Außenhandelskaufmann und
+      Handelsfachwirt. Jahrzehntelange Tätigkeit im Auslandsvertrieb technischer Produkte
+      verbunden mit vielen Auslandsreisen in Europa und Afrika.</p>
+
+    <p>Seit den frühen Siebzigerjahren nebenberuflich tätig in der Familien-, Hof- und
+      Obermenzinger, dann auch Pasinger Orts- und Kirchengeschichte mit zahlreichen
+      Publikationen in Zeitungen, Fachzeitschriften und Büchern; Autor, Mitautor und auch
+      Herausgeber von diversen mundartlichen und heimat-/kirchengeschichtlichen Werken im
+      Bereich des Münchner Westens.</p>
+
+    <p>Auch Vorträge bei Vereinen, Institutionen und der Münchner Volkshochschule sowie
+      Kirchen- und Stadtteilführungen wurden von ihm durchgeführt.</p>
+
+    <p>&nbsp;</p>
+
+    <p><h3><u>Auszeichnungen und Ehrungen:</u></h3></b></p>
+
+    <p>19.11.1988: Ehrenmitgliedschaft im Heimat- und Volkstrachtenverein "D'Würmtaler"
+      Menzing e.V. für außerordentliche Verdienste um die Förderung der
+      Vereinsziele</p>
+
+    <p>18.12.1988: DSKBiB-Ehrenkreuz in Anerkennung besonderer Verdienste um die
+      Soldatenkameradschaft in der Veteranen- und Reservisten-Kameradschaft
+      Obermenzing e.V. im Deutschen Soldaten- und Kameradschafts-Bund in Bayern e.V.</p>
+
+    <p>10.12.1992: DSKBiB-Verdienstkreuz II. Klasse in Anerkennung der besonderen
+      Verdienste um die Veteranen- und Reservisten-Kameradschaft Obermenzing e.V. im
+      Deutschen Soldaten- und Kameradschafts-Bund in Bayern e.V.</p>
+
+    <p>21.01.1995: Ehrennadel in Gold in Anerkennung und Würdigung der besonderen
+      Verdienste um die Veteranen- und Reservisten-Kameradschaft Obermenzing e.V. im
+      Deutschen Soldaten- und Kameradschafts-Bund in Bayern e.V.</p>
+
+    <p>18.01.1996: BSB-Verdienstkreuz I. Klasse in Anerkennung besonders
+      hervorragender Verdienst um die Veteranen- und Reservisten-Kameradschaft
+      Obermenzing e.V. im BSB 1874 e.V.</p>
+
+    <p>21.02.1997: Ehrenmedaille in Silber des Heimat- und Volkstrachtenvereins
+      "D'Würmtaler" Menzing e.V. für besondere Verdienste um das
+      Carlhüusl in Obermenzing und die Fürderung der Vereinsziele</p>
+
+    <p>20.02.1998: Ehrenmedaille in Gold des Heimat- und Volkstrachtenvereins "D'Würmtaler"
+      Menzing e.V. für außergewöhnliche Verdienste um das Carlhäusl in Obermenzing
+      und die Förderung der Vereinsziele</p>
+
+    <p>25.10.1998: BSB-Verdienstnadel mit Goldenem Eichenkranz in Anerkennung der
+      hervorragenden Verdienste um die Veteranen- und Reservisten-Kameradschaft
+      Obermenzing e.V. im BSB 1874 e.V.</p>
+
+    <p>28.10.1999: Kulturpreis des "Club der 99 Narrischen Würmtaler", 82152 Planegg bei
+      München, in Anerkennung der kultur- und stadtteilhistorischen Arbeiten</p>
+
+    <p>25.04.2001: Bezirksmedaille in Bronze des Reg. Bezirks Oberbayern, München, für Verdienste
+      um die Heimatpflege im Bezirk Oberbayern</p>
+
+    <p>24.10.2006: Verdienstmedaille des Verdienstordens der Bundesrepublik
+      Deutschland für besondere Verdienste (in der Heimatforschung und deren
+      Publikation)</p>
+
+    <p>02.03.2007: Ehrenabzeichen "Obermenzinger Dorfschreiber" des
+      Heimat- und Volkstrachtenvereins "D'Würmtaler" Menzing e.V. für
+      besondere Verdienste in der Heimatforschung</p>
+
+    <p>26.11.2013: Großes Verdienstkreuz in Gold des BSB 1874 (Bayer. Soldatenbund)
+      in Anerkennung der hervorragenden Verdienste</p>
+
+    <p>im Dez. 2013: Ehrenmedaille für 25 Jahre treue Mitgliedschaft und fürderung
+      der Vereinsziele des HuVTV Heimat- und Volkstrachtenvereins "D'Würmtaler"
+      Menzing e.V.</p>
+    </p>
+    <br>
+    <p align="center">*****</p>
+  </main>
 
 </body>
 

@@ -1,0 +1,129 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    float: left;
+    /*background-color: rgb(153, 194, 153);*/
+}
+
+.logo img{
+    border-radius: 5%;
+    float: left;
+    padding-right: 0px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo h1{
+    float: left; 
+}
+
+.textwrap{
+    float: left;
+    margin: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    min-height: 8vh;
+    background-color: #E5BE9E;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.nav-links ul{
+    overflow: hidden;
+}
+
+.nav-links li a:active{
+    background-color: #d4b094;
+    color: #332a23;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+.maintext{
+    margin:2%;
+    font-size: 18px;
+}
+
+.bildunterschrift{  
+    font-size: 15px;
+    font-style: italic;
+}
+
+.bild-mit-unterschrift{
+    text-align: left;
+    align-items: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+}
+  
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #d4b094;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E5BE9E;
+    min-width: 160px;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);   
+    z-index: 1;
+}
+  
+.dropdown-content a{
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {background-color: #d4b094;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.zeittafel{
+    line-height: 30px;
+}

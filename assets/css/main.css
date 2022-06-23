@@ -111,7 +111,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: solid 1px #e4e4e4;
-		color: inherit  ;
+		color: #2e9e80;
 		text-decoration: none;
 	}
 
@@ -2837,7 +2837,7 @@ input, select, textarea {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 4em 0 1em 0;
 		}
 
 		#main > section:first-child {
@@ -2851,7 +2851,7 @@ input, select, textarea {
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
+		padding: 2em 0 1em 0;
 	}
 
 		#footer .copyright {

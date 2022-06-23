@@ -111,7 +111,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: solid 1px #e4e4e4;
-		color: inherit;
+		color: inherit  ;
 		text-decoration: none;
 	}
 
@@ -3324,5 +3324,20 @@ input, select, textarea {
 	}
 
 	.plakat{
-		width: 100%;
+		width: 75%;
 	}
+
+	.button {
+      /*font: bold 11pt;
+      font: inherit;*/
+      text-decoration: none;
+      background-color: #535353;
+      text-color: ;
+      color: #EEEEE;
+      margin: auto;
+      padding: 0px 6px 0px 6px;
+      border-top: 1px solid #CCCCCC;
+      border-right: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      border-left: 1px solid #CCCCCC;
+    }

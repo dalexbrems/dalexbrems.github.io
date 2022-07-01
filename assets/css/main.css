@@ -3324,7 +3324,10 @@ input, select, textarea {
 	}
 
 	.plakat{
-		width: 75%;
+		width: 60%;
+        /*padding: 30px;*/
+        border: solid;
+        border-color: 'black';
 	}
 
 	.button {
